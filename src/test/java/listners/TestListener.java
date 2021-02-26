@@ -11,9 +11,9 @@ import com.aventstack.extentreports.Status;
 import extentreport.ExtentManager;
 import extentreport.ExtentTestManager;
 
-public class sjsj implements ITestListener {
+public class TestListener implements ITestListener {
 	ExtentTestManager extentTestManager;
-	public sjsj() {
+	public TestListener() {
 		extentTestManager=new ExtentTestManager();
 		
 	}
