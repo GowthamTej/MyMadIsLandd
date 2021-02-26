@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="listners.TestListener" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.htc.TestPages.LoginTest" />
+			<class name="com.htc.TestPages.TestHomePage" />
+			<class name="com.htc.TestPages.TestVipPage" />
+			<class name="com.htc.TestPages.TestVipBillingPage" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
