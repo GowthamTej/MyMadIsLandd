@@ -1,6 +1,7 @@
 package com.htc.TestPages;
 
 import java.util.Map;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.htc.Base.BaseClass;
 
@@ -14,19 +15,18 @@ public class LoginTest extends BaseClass {
 
 		login.LOGIN_TO_HOME(mapData.get("userId").toString(), mapData.get("password").toString());
 		System.out.println("validLogin");
-
-	//	Assert.assertEquals(driver.getTitle(), "My Account");
+	    Assert.assertEquals(driver.getTitle(),"My Account");
 	}
 
 	
 	
 	
-	@Test(priority = 2,dataProviderClass =com.htc.Base.DataProviders.class , dataProvider = "invalidLogin")
+	@Test(priority = 2,dataProviderClass =com.htc.Base.DataProviders.class , dataProvider = "invalidLogin", enabled=true)
 	public void TestInvalidLogin(Map<Object, Object> mapData) {
 
 		login.LOGIN_TO_HOME(mapData.get("userId").toString(), mapData.get("password").toString());
 		System.out.println("invalidLogin");
-		//Assert.assertEquals(driver.getTitle(), "Customer Login");
+		Assert.assertEquals(driver.getTitle(),"Customer Login");
 
 	}
 

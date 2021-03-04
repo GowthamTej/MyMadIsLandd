@@ -78,6 +78,9 @@ public class BillingInfo {
 		@FindBy(xpath="//button[@title='Place Order']")
 		 private  WebElement PlaceOrder ;
 		
+		@FindBy(xpath="//h2[text()='Thank you for your purchase!']")
+		 private  WebElement VerifyPlaceOrder ;
+		
 		
 		public BillingInfo(WebDriver driver) {
 			this.driver=driver;
@@ -122,7 +125,10 @@ public class BillingInfo {
 			}
 		}
 		
-	
+	   public String verifyBilling() {
+		 String str=this.VerifyPlaceOrder.getText();
+		 return str;
+	   }
 	
 	
 

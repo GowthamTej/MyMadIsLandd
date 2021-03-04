@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-03T23:37:17 PST" name="Default suite" finished-at="2021-03-03T23:38:18 PST" duration-ms="60669">
+  <suite started-at="2021-03-04T01:37:40 PST" name="Default suite" finished-at="2021-03-04T01:38:36 PST" duration-ms="55800">
     <groups>
     </groups>
-    <test started-at="2021-03-03T23:37:17 PST" name="Default test" finished-at="2021-03-03T23:38:18 PST" duration-ms="60669">
-      <class name="com.htc.TestPages.TestVipPage">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.htc.TestPages.TestVipPage@4278a03f]" started-at="2021-03-03T23:37:20 PST" name="initialization" finished-at="2021-03-03T23:37:48 PST" duration-ms="28264" status="PASS">
+    <test started-at="2021-03-04T01:37:40 PST" name="Default test" finished-at="2021-03-04T01:38:36 PST" duration-ms="55800">
+      <class name="com.htc.TestPages.TestVipBillingPage">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.htc.TestPages.TestVipBillingPage@29176cc1]" started-at="2021-03-04T01:37:43 PST" name="initialization" finished-at="2021-03-04T01:37:56 PST" duration-ms="13161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method signature="testVipPage(java.util.Map)[pri:1, instance:com.htc.TestPages.TestVipPage@4278a03f]" started-at="2021-03-03T23:37:48 PST" name="testVipPage" data-provider="validLogin" finished-at="2021-03-03T23:38:14 PST" duration-ms="25820" status="PASS">
+        <test-method signature="VipBillingTest(java.util.Map)[pri:1, instance:com.htc.TestPages.TestVipBillingPage@29176cc1]" started-at="2021-03-04T01:37:56 PST" name="VipBillingTest" data-provider="billing" finished-at="2021-03-04T01:38:34 PST" duration-ms="37805" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{userId=gowthamteja13@gmail.com, password=harsha12345}]]>
+                <![CDATA[{zipcode=XYZHHH, address=palamaner,Ap, city=Chennai, street=palamaner,Ap, cmpnt=Nike, telephone=8.299383929E9, fax=8383.0}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testVipPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.TestPages.TestVipPage@4278a03f]" started-at="2021-03-03T23:38:14 PST" name="tearDown" finished-at="2021-03-03T23:38:17 PST" duration-ms="3558" status="PASS">
+        </test-method> <!-- VipBillingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.TestPages.TestVipBillingPage@29176cc1]" started-at="2021-03-04T01:38:34 PST" name="tearDown" finished-at="2021-03-04T01:38:36 PST" duration-ms="1725" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.htc.TestPages.TestVipPage -->
+      </class> <!-- com.htc.TestPages.TestVipBillingPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

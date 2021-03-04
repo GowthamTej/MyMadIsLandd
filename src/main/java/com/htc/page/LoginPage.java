@@ -26,6 +26,11 @@ public class LoginPage {
 
 	@FindBy(xpath = "//span[text()='Login']")
 	private WebElement login;
+	
+	@FindBy(xpath = "//p[contains(text(),'Welcome')]")
+	private WebElement verifyValidlogin;
+	
+	
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;

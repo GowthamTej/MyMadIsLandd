@@ -23,7 +23,7 @@ public class VipPage {
 	@FindBy(xpath = "//img[ @id='product-collection-image-437']")
 	private WebElement clickOnProduct;
 
-	@FindBy(xpath = "//img[@alt='Black']")
+	@FindBy(xpath = "//img[@alt='White']")
 	private WebElement clickOnColour;
 
 	@FindBy(xpath = "//span[@class='swatch-label' and contains(text(),'27')]")

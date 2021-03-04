@@ -40,6 +40,8 @@ public class HomePage {
 
 	public void clickOnSale() {
 		util.flash(sale, driver);
+		util.drawBorder(driver, sale);
+		util.ScreenShot(driver,"saleScreenShot");
 		sale.click();
 
 	}
@@ -54,6 +56,14 @@ public class HomePage {
 		util.flash(men, driver);
 		men.click();
 
+	}
+	
+	public void clickOnSideBar() {
+		clickOnVip();
+		clickOnSale();
+		clickOnWomen();
+		clickOnMen();
+		
 	}
 
 }

@@ -22,8 +22,11 @@ public class TestVipBillingPage extends BaseClass{
 		VipPage vp=homePage.clickOnVip();
 		BillingInfo bill=vp.Vip();
 		bill.billingInfo(mapData);
-		String str=driver.getTitle();
-		Assert.assertEquals(str,"Checkout");
+		 
+		String hm=bill.verifyBilling();
+		System.out.println(hm);
+		
+		//Assert.assertEquals();
 		
 	}
 
