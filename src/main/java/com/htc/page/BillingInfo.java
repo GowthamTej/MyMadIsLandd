@@ -18,7 +18,7 @@ public class BillingInfo {
 	
 		
 		  @FindBy(
-		  xpath="//div[@class='input-box']//select[@name='billing_address_id' and @id='billing-address-select']/option[2]"
+	      xpath="//div[@class='input-box']//select[@name='billing_address_id' and @id='billing-address-select']/option[2]"
 		  ) private WebElement addrs;
 		 
 	  

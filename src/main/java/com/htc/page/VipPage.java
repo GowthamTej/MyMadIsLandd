@@ -20,10 +20,10 @@ public class VipPage {
 	@FindBy(xpath = "//a[text()='VIP']")
 	private WebElement vipLink;
 
-	@FindBy(xpath = "//img[ @id='product-collection-image-427']")
+	@FindBy(xpath = "//img[ @id='product-collection-image-437']")
 	private WebElement clickOnProduct;
 
-	@FindBy(xpath = "//img[@alt='Blue']")
+	@FindBy(xpath = "//img[@alt='Black']")
 	private WebElement clickOnColour;
 
 	@FindBy(xpath = "//span[@class='swatch-label' and contains(text(),'27')]")
@@ -54,7 +54,7 @@ public class VipPage {
 		clickOnProduct.click();
 
 		clickOnColour.click();
-		clickOnSize.click();
+		//clickOnSize.click();
 		Actions act = new Actions(driver);
 		jse.executeScript("window.scrollBy(0,400)");
 
