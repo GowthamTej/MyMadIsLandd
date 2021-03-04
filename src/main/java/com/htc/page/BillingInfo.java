@@ -16,47 +16,50 @@ public class BillingInfo {
 	   private WebDriver driver;
 	
 	
-	    @FindBy(xpath="//div[@class='input-box']//select[@name='billing_address_id' and @id='billing-address-select']/option[2]")
-	    private  WebElement addrs;
+		
+		  @FindBy(
+		  xpath="//div[@class='input-box']//select[@name='billing_address_id' and @id='billing-address-select']/option[2]"
+		  ) private WebElement addrs;
+		 
 	  
 	  
-		@FindBy(xpath = "//input[@id='billing:company']")
+		@FindBy(xpath = "//input[@id='billing:company']")//
 		 private  WebElement company;
 		
 		@FindBy(xpath = "//input[@id='billing:email']")
 		 private  WebElement emailID;
 		
-		@FindBy(xpath = "//input[@id='billing:street1' ]")
+		@FindBy(xpath = "//input[@id='billing:street1' ]")//
 		 private  WebElement StreetAddress;
 		
-		@FindBy(xpath = "//input[ @id='billing:street2']")
+		@FindBy(xpath = "//input[ @id='billing:street2']")//
 		 private  WebElement StreetAddress2;
 
-		@FindBy(xpath = "//input[@name='billing[city]']")
+		@FindBy(xpath = "//input[@name='billing[city]']")//
 		 private  WebElement city; 
 
-		@FindBy(xpath = "//select[ @name='billing[region_id]']")
+		@FindBy(xpath = "//select[ @name='billing[region_id]']")//
 		 private  WebElement state;
 
 		@FindBy(xpath = "//select[@id='billing:country_id']//option[@value='IN']")
 		 private  WebElement country; 
 
-		@FindBy(xpath = "//input[ @id='billing:postcode' ]")
+		@FindBy(xpath = "//input[ @id='billing:postcode' ]")//
 		 private  WebElement postcode;
 
-		@FindBy(xpath = "//select[@name='billing[country_id]']//option[text()='India']")
+		@FindBy(xpath = "//select[@name='billing[country_id]']//option[text()='India']")//
 		 private  WebElement country3; 
 
-		@FindBy(xpath = "//input[@id='billing:telephone']")
+		@FindBy(xpath = "//input[@id='billing:telephone']")//
 		 private  WebElement telephone; 
 
-		@FindBy(xpath = "//input[@name='billing[fax]']")
+		@FindBy(xpath = "//input[@name='billing[fax]']")//
 		 private  WebElement fax;
 
-		@FindBy(xpath = "//label[text()='Ship to this address']")
+		@FindBy(xpath = "//label[text()='Ship to this address']")//
 		 private  WebElement ShipAddress;
 		
-		@FindBy(xpath = "//button[ @onclick='billing.save()']")
+		@FindBy(xpath = "//button[ @onclick='billing.save()']")//
 		 private  WebElement Continue;
 		
 		@FindBy(xpath="//label[contains(text(),'Ship to this address')]")
@@ -111,6 +114,12 @@ public class BillingInfo {
 			 cnt.click();
 			 cnt2.click();
 			 PlaceOrder.click();
+			 try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		
 	

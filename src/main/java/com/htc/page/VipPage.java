@@ -7,8 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import com.htc.page.BillingInfo;
+import com.htc.Base.Utility;
 
-import com.htc.constants.Utility;
+
 
 public class VipPage {
 
@@ -18,13 +20,13 @@ public class VipPage {
 	@FindBy(xpath = "//a[text()='VIP']")
 	private WebElement vipLink;
 
-	@FindBy(xpath = "//img[ @id='product-collection-image-412']")
+	@FindBy(xpath = "//img[ @id='product-collection-image-427']")
 	private WebElement clickOnProduct;
 
-	@FindBy(xpath = "//img[@alt='Indigo']")
+	@FindBy(xpath = "//img[@alt='Blue']")
 	private WebElement clickOnColour;
 
-	@FindBy(xpath = "//span[@class='swatch-label' and contains(text(),'M')]")
+	@FindBy(xpath = "//span[@class='swatch-label' and contains(text(),'27')]")
 	private WebElement clickOnSize;
 
 	@FindBy(xpath = "//input[@title='Qty']")
@@ -57,7 +59,7 @@ public class VipPage {
 		jse.executeScript("window.scrollBy(0,400)");
 
 		act.moveToElement(clickOnQty).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x").keyUp(Keys.CONTROL)
-				.sendKeys("3").perform();
+				.sendKeys("1").perform();
 
 		clickOnCard.click();
 		proceedToCheckOut.click();

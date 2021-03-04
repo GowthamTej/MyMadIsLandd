@@ -11,7 +11,7 @@ import com.htc.page.HomePage;
 public class TestHomePage extends BaseClass {
 	 private HomePage homePage = null;
  
-	@Test(priority = 1, dataProvider = "validLogin")
+	@Test(priority = 1,dataProviderClass =com.htc.Base.DataProviders.class , dataProvider = "validLogin")
 
 	public void TestHomePgae_Accessibility(Map<Object, Object> mapData) {
 

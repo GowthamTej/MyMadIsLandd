@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.htc.constants.Utility;
+import com.htc.Base.Utility;
+
+
 
 public class HomePage {
 	private WebDriver driver =null;

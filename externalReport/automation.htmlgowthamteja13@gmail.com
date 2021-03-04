@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Friday, February 26, 2021, 12:10 PM (PST)</span>
+                    <span class='label suite-start-time blue darken-3'>Saturday, February 27, 2021, 03:26 AM (PST)</span>
 				</a>
 			</li>
 			<li>
@@ -124,14 +124,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>TestvalidLogin</span>
-						<span class='test-time'>Friday, February 26, 2021, 12:10 PM (PST)</span>
+						<span class='test-time'>Saturday, February 27, 2021, 03:26 AM (PST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Friday, February 26, 2021, 12:10 PM (PST)</span>
-	<span class='label end-time'>Friday, February 26, 2021, 12:10 PM (PST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+203ms</span>
+	<span class='label start-time'>Saturday, February 27, 2021, 03:26 AM (PST)</span>
+	<span class='label end-time'>Saturday, February 27, 2021, 03:26 AM (PST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+424ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -145,7 +145,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:10:14 PM</td>
+					<td class='timestamp'>3:26:50 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -158,14 +158,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>TestInvalidLogin</span>
-						<span class='test-time'>Friday, February 26, 2021, 12:10 PM (PST)</span>
+						<span class='test-time'>Saturday, February 27, 2021, 03:27 AM (PST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Friday, February 26, 2021, 12:10 PM (PST)</span>
-	<span class='label end-time'>Friday, February 26, 2021, 12:10 PM (PST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+786ms</span>
+	<span class='label start-time'>Saturday, February 27, 2021, 03:27 AM (PST)</span>
+	<span class='label end-time'>Saturday, February 27, 2021, 03:27 AM (PST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+528ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -179,7 +179,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:10:32 PM</td>
+					<td class='timestamp'>3:27:09 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -192,14 +192,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>TestHomePgae_Accessibility</span>
-						<span class='test-time'>Friday, February 26, 2021, 12:10 PM (PST)</span>
+						<span class='test-time'>Saturday, February 27, 2021, 03:27 AM (PST)</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Friday, February 26, 2021, 12:10 PM (PST)</span>
-	<span class='label end-time'>Friday, February 26, 2021, 12:11 PM (PST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+328ms</span>
+	<span class='label start-time'>Saturday, February 27, 2021, 03:27 AM (PST)</span>
+	<span class='label end-time'>Saturday, February 27, 2021, 03:27 AM (PST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+488ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -213,7 +213,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:11:09 PM</td>
+					<td class='timestamp'>3:27:39 AM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -226,14 +226,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>testVipPage</span>
-						<span class='test-time'>Friday, February 26, 2021, 12:11 PM (PST)</span>
+						<span class='test-time'>Saturday, February 27, 2021, 03:27 AM (PST)</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Friday, February 26, 2021, 12:11 PM (PST)</span>
-	<span class='label end-time'>Friday, February 26, 2021, 12:11 PM (PST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 29s+430ms</span>
+	<span class='label start-time'>Saturday, February 27, 2021, 03:27 AM (PST)</span>
+	<span class='label end-time'>Saturday, February 27, 2021, 03:28 AM (PST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 32s+324ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -247,16 +247,16 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>12:11:53 PM</td>
+					<td class='timestamp'>3:28:25 AM</td>
 					<td class='step-details'>Test Failedorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='checkout-types top']/li/button"}
   (Session info: chrome=88.0.4324.190)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LENOVO', ip: '192.168.10.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'LENOVO', ip: '192.168.10.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65474}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fac03e896e9e011006eef470f114c474
-*** Element info: {Using=xpath, value=//ul[@class='checkout-types top']/li/button}.....[Ljava.lang.Object;@4041739c....[]</td>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50910}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a5b78a7853b3727b80bd02dfcb361be
+*** Element info: {Using=xpath, value=//ul[@class='checkout-types top']/li/button}.....[Ljava.lang.Object;@283ab206....[]</td>
 				</tr>
 			</tbody>
 		</table>
@@ -268,14 +268,14 @@ Session ID: fac03e896e9e011006eef470f114c474
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>VipBillingTest</span>
-						<span class='test-time'>Friday, February 26, 2021, 12:12 PM (PST)</span>
+						<span class='test-time'>Saturday, February 27, 2021, 03:28 AM (PST)</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Friday, February 26, 2021, 12:12 PM (PST)</span>
-	<span class='label end-time'>Friday, February 26, 2021, 12:12 PM (PST)</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 34s+611ms</span>
+	<span class='label start-time'>Saturday, February 27, 2021, 03:28 AM (PST)</span>
+	<span class='label end-time'>Saturday, February 27, 2021, 03:29 AM (PST)</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 28s+695ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -289,16 +289,16 @@ Session ID: fac03e896e9e011006eef470f114c474
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>12:12:37 PM</td>
+					<td class='timestamp'>3:29:12 AM</td>
 					<td class='step-details'>Test Failedorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='checkout-types top']/li/button"}
   (Session info: chrome=88.0.4324.190)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LENOVO', ip: '192.168.10.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'LENOVO', ip: '192.168.10.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65524}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6db2d0b4fcc414a9bcd8366993343573
-*** Element info: {Using=xpath, value=//ul[@class='checkout-types top']/li/button}.....[Ljava.lang.Object;@52354202....[]</td>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.190, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50950}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 131a5bf2e2cbfeb4c91bafe43610a9c5
+*** Element info: {Using=xpath, value=//ul[@class='checkout-types top']/li/button}.....[Ljava.lang.Object;@4c65d8e3....[]</td>
 				</tr>
 			</tbody>
 		</table>
@@ -387,19 +387,19 @@ Session ID: 6db2d0b4fcc414a9bcd8366993343573
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Friday, February 26, 2021, 12:10 PM (PST)</div>
+					<div class='panel-lead'>Saturday, February 27, 2021, 03:26 AM (PST)</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Friday, February 26, 2021, 12:12 PM (PST)</div>
+			 		<div class='panel-lead'>Saturday, February 27, 2021, 03:29 AM (PST)</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>152,233ms</div>
+					<div class='panel-lead'>152,590ms</div>
 				</div>
 			</div>
 			<div class='col s4'>

@@ -16,13 +16,14 @@ public class TestVipBillingPage extends BaseClass{
 	private HomePage homePage=null;
 	
 	
-	@Test(priority = 1,dataProvider="billing")
+	@Test(priority = 1,dataProviderClass =com.htc.Base.DataProviders.class ,dataProvider="billing")
 	private void VipBillingTest(Map <Object,Object>mapData) {
 		homePage=login.LOGIN_TO_HOME(prop.getProperty("email"),prop.getProperty("password"));
 		VipPage vp=homePage.clickOnVip();
 		BillingInfo bill=vp.Vip();
 		bill.billingInfo(mapData);
-		Assert.assertEquals(driver.getTitle(),"Checkout");
+		String str=driver.getTitle();
+		Assert.assertEquals(str,"Checkout");
 		
 	}
 

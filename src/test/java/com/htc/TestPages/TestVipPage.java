@@ -13,7 +13,7 @@ public class TestVipPage  extends BaseClass {
 	    private HomePage homePage=null;
 	
 	
-     	@Test(priority = 1,dataProvider="validLogin")
+     	@Test(priority = 1,dataProviderClass =com.htc.Base.DataProviders.class ,dataProvider="validLogin")
 	    public void testVipPage(Map <Object,Object>mapData) 
      	{
      		
