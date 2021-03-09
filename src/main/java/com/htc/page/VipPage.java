@@ -7,8 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.htc.base.Utility;
 import com.htc.page.BillingInfo;
-import com.htc.Base.Utility;
 
 
 
@@ -38,6 +39,7 @@ public class VipPage {
 	@FindBy(xpath = "//ul[@class='checkout-types top']/li/button")
 	private WebElement proceedToCheckOut;
 
+	
 	public VipPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -66,5 +68,7 @@ public class VipPage {
 
 		return new BillingInfo(driver);
 	}
+	
+	
 
 }

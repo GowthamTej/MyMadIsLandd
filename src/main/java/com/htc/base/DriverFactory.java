@@ -1,4 +1,4 @@
-package com.htc.Base;
+package com.htc.base;
 
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -9,36 +9,32 @@ import com.htc.prop.Property;
 
 public class DriverFactory {
 	protected Properties prop;
-	
-	
+
 	public DriverFactory() {
 		Property pro = new Property();
-		 prop=pro.getProp();
+		prop = pro.getProp();
 	}
-	
-	
+
 	public WebDriver driver() {
-		
-		WebDriver driver=null;
-		String browserName=prop.getProperty("browser");
-		
-		switch(browserName) {
+
+		WebDriver driver = null;
+		String browserName = prop.getProperty("browser");
+
+		switch (browserName) {
 		case "chrome":
-		System.setProperty(prop.getProperty("dri"), prop.getProperty("path"));
-		driver= new ChromeDriver();
-		break;
+			System.setProperty(prop.getProperty("dri"), prop.getProperty("path"));
+			driver = new ChromeDriver();
+			break;
 		}
-		
+
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
-		
+
 		return driver;
-		
-		
+
 	}
-	
 
 }

@@ -6,10 +6,10 @@
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="com.htc.TestPages.LoginTest" />
-			<class name="com.htc.TestPages.TestHomePage" />
-			<class name="com.htc.TestPages.TestVipPage" />
-			<class name="com.htc.TestPages.TestVipBillingPage" />
+			<class name="com.htc.testPages.LoginTest" />
+			<class name="com.htc.testPages.HomeElementsTest" />
+			<class name="com.htc.testPages.VipTest" />
+			<class name="com.htc.testPages.VipBillingTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

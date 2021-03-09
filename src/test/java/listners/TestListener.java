@@ -1,26 +1,27 @@
 package listners;
 
 
+
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-
 import extentreport.ExtentManager;
 import extentreport.ExtentTestManager;
 
 public class TestListener implements ITestListener {
-	ExtentTestManager extentTestManager;
+	private ExtentTestManager extentTestManager;
+
+	
 	public TestListener() {
+		
 		extentTestManager=new ExtentTestManager();
 		
 	}
 	
-
 	public void onStart(ITestContext context) {
-	
+		
 		System.out.println("*** Test Suite " + context.getName() + " started ***");
 		
 	}
@@ -34,6 +35,7 @@ public class TestListener implements ITestListener {
 	}
 
 	public void onTestStart(ITestResult result) {
+		
 		System.out.println(("*** Running test method " + result.getMethod().getMethodName() + "..."));
 		extentTestManager.startTest(result.getMethod().getMethodName());
 	}
@@ -44,12 +46,12 @@ public class TestListener implements ITestListener {
 	}
 
 	public void onTestFailure(ITestResult result) {
+		
 		System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed...");
 		extentTestManager.getTest().log(Status.FAIL, "Test Failed"+result.getThrowable()+"....."+result.getParameters()+"...."+result.getSkipCausedBy());
 		
-		
-		
-		
+		String str=result.getThrowable().fillInStackTrace().getMessage();
+		System.out.println(str);
 		
 	}
 
@@ -62,8 +64,6 @@ public class TestListener implements ITestListener {
 		System.out.println("*** Test failed but within percentage % " + result.getMethod().getMethodName());
 		
 			
-		
-		
 	}
 
 }

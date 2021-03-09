@@ -1,17 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-04T01:37:40 PST" name="Default suite" finished-at="2021-03-04T01:38:36 PST" duration-ms="55800">
+  <suite started-at="2021-03-09T07:42:14 PST" name="Suite" finished-at="2021-03-09T07:46:54 PST" duration-ms="279317">
     <groups>
     </groups>
-    <test started-at="2021-03-04T01:37:40 PST" name="Default test" finished-at="2021-03-04T01:38:36 PST" duration-ms="55800">
-      <class name="com.htc.TestPages.TestVipBillingPage">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.htc.TestPages.TestVipBillingPage@29176cc1]" started-at="2021-03-04T01:37:43 PST" name="initialization" finished-at="2021-03-04T01:37:56 PST" duration-ms="13161" status="PASS">
+    <test started-at="2021-03-09T07:42:14 PST" name="Test" finished-at="2021-03-09T07:46:54 PST" duration-ms="279317">
+      <class name="com.htc.testPages.HomeElementsTest">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.htc.testPages.HomeElementsTest@d4342c2]" started-at="2021-03-09T07:44:16 PST" name="initialization" finished-at="2021-03-09T07:44:34 PST" duration-ms="18063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method signature="VipBillingTest(java.util.Map)[pri:1, instance:com.htc.TestPages.TestVipBillingPage@29176cc1]" started-at="2021-03-04T01:37:56 PST" name="VipBillingTest" data-provider="billing" finished-at="2021-03-04T01:38:34 PST" duration-ms="37805" status="PASS">
+        <test-method signature="TestHomePgae_Accessibility(java.util.Map)[pri:1, instance:com.htc.testPages.HomeElementsTest@d4342c2]" started-at="2021-03-09T07:44:34 PST" name="TestHomePgae_Accessibility" data-provider="Login_data" finished-at="2021-03-09T07:44:59 PST" duration-ms="24553" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{inpass=harshsaj122, password=harsha12345, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHomePgae_Accessibility -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.htc.testPages.HomeElementsTest@d4342c2]" started-at="2021-03-09T07:44:59 PST" name="tearDown" finished-at="2021-03-09T07:45:07 PST" duration-ms="8229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestHomePgae_Accessibility status=SUCCESS method=HomeElementsTest.TestHomePgae_Accessibility(java.util.Map)[pri:1, instance:com.htc.testPages.HomeElementsTest@d4342c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.htc.testPages.HomeElementsTest -->
+      <class name="com.htc.testPages.LoginTest">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.htc.testPages.LoginTest@4e91d63f]" started-at="2021-03-09T07:42:23 PST" name="initialization" finished-at="2021-03-09T07:43:19 PST" duration-ms="55718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="TestvalidLogin(java.util.Map)[pri:1, instance:com.htc.testPages.LoginTest@4e91d63f]" started-at="2021-03-09T07:43:19 PST" name="TestvalidLogin" data-provider="Login_data" finished-at="2021-03-09T07:43:31 PST" duration-ms="12657" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{inpass=harshsaj122, password=harsha12345, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestvalidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.htc.testPages.LoginTest@4e91d63f]" started-at="2021-03-09T07:43:32 PST" name="tearDown" finished-at="2021-03-09T07:43:37 PST" duration-ms="5347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestvalidLogin status=SUCCESS method=LoginTest.TestvalidLogin(java.util.Map)[pri:1, instance:com.htc.testPages.LoginTest@4e91d63f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.htc.testPages.LoginTest@4e91d63f]" started-at="2021-03-09T07:43:37 PST" name="initialization" finished-at="2021-03-09T07:43:57 PST" duration-ms="19519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="TestInvalidLogin(java.util.Map)[pri:2, instance:com.htc.testPages.LoginTest@4e91d63f]" started-at="2021-03-09T07:43:57 PST" name="TestInvalidLogin" data-provider="Login_data" finished-at="2021-03-09T07:44:12 PST" duration-ms="15037" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{inpass=harshsaj122, password=harsha12345, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestInvalidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.htc.testPages.LoginTest@4e91d63f]" started-at="2021-03-09T07:44:12 PST" name="tearDown" finished-at="2021-03-09T07:44:16 PST" duration-ms="3816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestInvalidLogin status=SUCCESS method=LoginTest.TestInvalidLogin(java.util.Map)[pri:2, instance:com.htc.testPages.LoginTest@4e91d63f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.htc.testPages.LoginTest -->
+      <class name="com.htc.testPages.VipTest">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.htc.testPages.VipTest@2bbf180e]" started-at="2021-03-09T07:45:07 PST" name="initialization" finished-at="2021-03-09T07:45:29 PST" duration-ms="22495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="testVipPage(java.util.Map)[pri:1, instance:com.htc.testPages.VipTest@2bbf180e]" started-at="2021-03-09T07:45:29 PST" name="testVipPage" data-provider="Login_data" finished-at="2021-03-09T07:45:57 PST" duration-ms="27850" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{inpass=harshsaj122, password=harsha12345, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='checkout-types top']/li/button"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.10.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64963}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f42e228ceadd98f2d7514c941c9f7303
+*** Element info: {Using=xpath, value=//ul[@class='checkout-types top']/li/button}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='checkout-types top']/li/button"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.10.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64963}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f42e228ceadd98f2d7514c941c9f7303
+*** Element info: {Using=xpath, value=//ul[@class='checkout-types top']/li/button}
+at listners.TestListener.onTestFailure(TestListener.java:53)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:66)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:651)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVipPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.htc.testPages.VipTest@2bbf180e]" started-at="2021-03-09T07:45:57 PST" name="tearDown" finished-at="2021-03-09T07:46:02 PST" duration-ms="4790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testVipPage status=FAILURE method=VipTest.testVipPage(java.util.Map)[pri:1, instance:com.htc.testPages.VipTest@2bbf180e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.htc.testPages.VipTest -->
+      <class name="com.htc.testPages.VipBillingTest">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.htc.testPages.VipBillingTest@163e4e87]" started-at="2021-03-09T07:46:03 PST" name="initialization" finished-at="2021-03-09T07:46:21 PST" duration-ms="17905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="VipBillingTest(java.util.Map)[pri:1, instance:com.htc.testPages.VipBillingTest@163e4e87]" started-at="2021-03-09T07:46:21 PST" name="VipBillingTest" data-provider="billing" finished-at="2021-03-09T07:46:47 PST" duration-ms="25812" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -19,14 +180,72 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='checkout-types top']/li/button"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.10.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65008}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f5d14c3285b58aa496815891a11ed80
+*** Element info: {Using=xpath, value=//ul[@class='checkout-types top']/li/button}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='checkout-types top']/li/button"}
+  (Session info: chrome=89.0.4389.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.10.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65008}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3f5d14c3285b58aa496815891a11ed80
+*** Element info: {Using=xpath, value=//ul[@class='checkout-types top']/li/button}
+at listners.TestListener.onTestFailure(TestListener.java:53)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:66)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:651)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VipBillingTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.TestPages.TestVipBillingPage@29176cc1]" started-at="2021-03-04T01:38:34 PST" name="tearDown" finished-at="2021-03-04T01:38:36 PST" duration-ms="1725" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.htc.testPages.VipBillingTest@163e4e87]" started-at="2021-03-09T07:46:47 PST" name="tearDown" finished-at="2021-03-09T07:46:54 PST" duration-ms="6840" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VipBillingTest status=FAILURE method=VipBillingTest.VipBillingTest(java.util.Map)[pri:1, instance:com.htc.testPages.VipBillingTest@163e4e87] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.htc.TestPages.TestVipBillingPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.htc.testPages.VipBillingTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

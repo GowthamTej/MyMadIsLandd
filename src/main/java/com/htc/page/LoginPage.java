@@ -30,6 +30,8 @@ public class LoginPage {
 	@FindBy(xpath = "//p[contains(text(),'Welcome')]")
 	private WebElement verifyValidlogin;
 	
+	@FindBy(xpath = "//a[text()='Log Out']")
+	private WebElement logout;
 	
 
 	public LoginPage(WebDriver driver) {
@@ -56,6 +58,11 @@ public class LoginPage {
 	public void ClickOnLogin() {
 		this.login.click();
 	}
+	public void ClickOnLogOut() {
+		this.account.click();;
+		this.logout.click();;
+	}
+
 
 	public HomePage LOGIN_TO_HOME(String email,String password) {
 
@@ -68,5 +75,7 @@ public class LoginPage {
 		return new HomePage(driver);
 
 	}
+	
+	
 
 }

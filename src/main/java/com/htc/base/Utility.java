@@ -1,28 +1,10 @@
-package com.htc.Base;
+package com.htc.base;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class Utility {
-
-	public void ScreenShot(WebDriver driver, String str) {
-
-		TakesScreenshot tss = (TakesScreenshot) driver;
-		File fl = tss.getScreenshotAs(OutputType.FILE);
-		try {
-			FileUtils.copyFile(fl, new File("./ScreenShots/" + str + ".png"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 
 	public void drawBorder(WebDriver driver, WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;

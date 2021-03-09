@@ -1,4 +1,4 @@
-package com.htc.DataReader;
+package com.htc.dataReader;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -10,13 +10,13 @@ import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-import com.htc.Base.BaseClass;
+import com.htc.base.BaseTest;
 
 import org.apache.poi.ss.usermodel.Sheet;
 
-public class TestUtil extends BaseClass {
+public class ExcelFileManager extends BaseTest {
 
-	public TestUtil() {
+	public ExcelFileManager() {
 		super();
 
 	}
@@ -45,23 +45,20 @@ public class TestUtil extends BaseClass {
 			e.printStackTrace();
 		}
 		sheet = book.getSheet(sheetName);
-		 Object[][] data=new Object[sheet.getLastRowNum()][1];
-		 
-		 
-		 
-		 
-		 for(int Row=0;Row<sheet.getLastRowNum();Row++) {
-			 Map<Object,Object>dataMap=new HashMap<Object,Object>();
-			 for(int col=0;col<sheet.getRow(Row).getLastCellNum();col++) {
-				 
-				 dataMap.put(sheet.getRow(0).getCell(col).toString(),sheet.getRow(Row+1).getCell(col).toString());
-				 
-				 
-				// data[Row][col]=sheet.getRow(Row+1).getCell(col).toString();
-			 }
-			 data[Row][0]=dataMap;
-		 } 
-		 return data;
-	   }
-}
+		Object[][] data = new Object[sheet.getLastRowNum()][1];
 
+		for (int Row = 0; Row < sheet.getLastRowNum(); Row++) {
+
+			Map<Object, Object> dataMap = new HashMap<Object, Object>();
+
+			for (int col = 0; col < sheet.getRow(Row).getLastCellNum(); col++) {
+
+				dataMap.put(sheet.getRow(0).getCell(col).toString(), sheet.getRow(Row + 1).getCell(col).toString());
+
+				// data[Row][col]=sheet.getRow(Row+1).getCell(col).toString();
+			}
+			data[Row][0] = dataMap;
+		}
+		return data;
+	}
+}
