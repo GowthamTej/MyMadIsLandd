@@ -13,6 +13,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.htc.testPages.VipTest -->
+      <class name="com.htc.testPages.LoginTest">
+        <methods>
+          <include name="TestvalidLogin" invocation-numbers="0"/>
+          <include name="initialization"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.htc.testPages.LoginTest -->
       <class name="com.htc.testPages.VipBillingTest">
         <methods>
           <include name="initialization"/>

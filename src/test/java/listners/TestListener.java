@@ -3,10 +3,14 @@ package listners;
 
 
 
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import com.aventstack.extentreports.Status;
+import com.htc.base.BaseTest;
+import com.htc.base.SeleniumUtility;
+
 import extentreport.ExtentManager;
 import extentreport.ExtentTestManager;
 
@@ -43,13 +47,23 @@ public class TestListener implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("*** Executed " + result.getMethod().getMethodName() + " test successfully...");
 		extentTestManager.getTest().log(Status.PASS, "Test passed");
+		
+		    Object testClass = result.getInstance();
+		    WebDriver webDriver = ((BaseTest) testClass).getDriver();
+		    
+		    SeleniumUtility.ScreenShot(webDriver,result.getName(),"pass");
+		
 	}
 
 	public void onTestFailure(ITestResult result) {
 		
 		System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed...");
 		extentTestManager.getTest().log(Status.FAIL, "Test Failed"+result.getThrowable()+"....."+result.getParameters()+"...."+result.getSkipCausedBy());
-		
+	    Object testClass = result.getInstance();
+	    WebDriver webDriver = ((BaseTest) testClass).getDriver();
+	    
+	    SeleniumUtility.ScreenShot(webDriver,result.getName(),"fail");
+	    
 		String str=result.getThrowable().fillInStackTrace().getMessage();
 		System.out.println(str);
 		

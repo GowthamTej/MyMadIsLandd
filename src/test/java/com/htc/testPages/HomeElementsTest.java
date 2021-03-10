@@ -13,7 +13,7 @@ public class HomeElementsTest extends BaseTest {
 	 
 	@Test(priority = 1,dataProviderClass =com.htc.base.DataProvider.class , dataProvider = "Login_data")
 
-	public void TestHomePgae_Accessibility(Map<Object, Object> mapData) {
+	private void TestHomePgae_Accessibility(Map<Object, Object> mapData) {
 
 		homePage = login.LOGIN_TO_HOME(mapData.get("userId").toString(), mapData.get("password").toString());
 		homePage.clickOnSideBar();

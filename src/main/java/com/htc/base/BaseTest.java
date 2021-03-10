@@ -33,7 +33,7 @@ public class BaseTest {
 	@AfterMethod
 	public void tearDown(ITestResult result) {
 
-		SeleniumUtility.FailTestScreenShot(driver, result, prop.getProperty("fail"));
+		//SeleniumUtility.FailTestScreenShot(driver, result);
 
 		if (result.getMethod().getMethodName().equals("TestInvalidLogin")) {
 			driver.quit();
