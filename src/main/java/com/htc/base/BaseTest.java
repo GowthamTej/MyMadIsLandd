@@ -33,8 +33,7 @@ public class BaseTest {
 	@AfterMethod
 	public void tearDown(ITestResult result) {
 
-		//SeleniumUtility.FailTestScreenShot(driver, result);
-
+		
 		if (result.getMethod().getMethodName().equals("TestInvalidLogin")) {
 			driver.quit();
 		} else {
@@ -51,7 +50,6 @@ public class BaseTest {
 			boolean status = wdw.isDisplayed();
 			if (status) {
 				System.out.println("===== WebDriver is visible======");
-
 			}
 		} catch (NoSuchElementException nsee) {
 			System.out.println("You are getting No Such Element Exception" + "------------>");

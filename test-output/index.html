@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,17 +102,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.htc.testPages.LoginTest" class="method navigator-link" hash-for-method="TestvalidLogin({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)">TestvalidLogin({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.htc.testPages.VipBillingTest" class="method navigator-link" hash-for-method="VipBillingTest({zipcode=XYZHHH, address=palamaner,Ap, city=Chennai, street=palamaner,Ap, cmpnt=Nike, telephone=8.29...)">VipBillingTest({zipcode=XYZHHH, address=palamaner,Ap, city=Chennai, street=palamaner,Ap, cmpnt=Nike, telephone=8.29...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.htc.testPages.VipTest" class="method navigator-link" hash-for-method="testVipPage({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)">testVipPage({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -134,6 +124,16 @@
                         <a href="#" panel-name="suite-Suite" title="com.htc.testPages.LoginTest" class="method navigator-link" hash-for-method="TestInvalidLogin({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)">TestInvalidLogin({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.htc.testPages.LoginTest" class="method navigator-link" hash-for-method="TestvalidLogin({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)">TestvalidLogin({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.htc.testPages.VipTest" class="method navigator-link" hash-for-method="testVipPage({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)">testVipPage({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -146,56 +146,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.htc.testPages.VipTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testVipPage({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)">
-                  </a> <!-- testVipPage({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....) -->
-                  <span class="method-name">testVipPage</span>
-                  <span class="parameters">({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail.com})</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;checkout-types top&apos;]/li/button&quot;}
-  (Session info: chrome=89.0.4389.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.10.38&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51760}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b1588c7076687e6cab7afc853a534921
-*** Element info: {Using=xpath, value=//ul[@class=&apos;checkout-types top&apos;]/li/button}
-	at listners.TestListener.onTestFailure(TestListener.java:66)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.htc.testPages.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestvalidLogin({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)">
-                  </a> <!-- TestvalidLogin({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....) -->
-                  <span class="method-name">TestvalidLogin</span>
-                  <span class="parameters">({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail.com})</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Myl Account] but found [My Account]
-	at listners.TestListener.onTestFailure(TestListener.java:66)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
@@ -214,10 +164,10 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.10.38&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c5983fb530f78cf9653fd1fc6786db49
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b0e5d8d6a5d42f9c9960c246fc2820a3
 *** Element info: {Using=xpath, value=//ul[@class=&apos;checkout-types top&apos;]/li/button}
-	at listners.TestListener.onTestFailure(TestListener.java:66)
+	at listners.TestListener.onTestFailure(TestListener.java:67)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
 ... Removed 24 stack frames
 </div> <!-- stack-trace -->
@@ -225,6 +175,22 @@ Session ID: c5983fb530f78cf9653fd1fc6786db49
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.htc.testPages.VipTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testVipPage({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)">
+                  </a> <!-- testVipPage({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....) -->
+                  <span class="method-name">testVipPage</span>
+                  <span class="parameters">({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -236,6 +202,14 @@ Session ID: c5983fb530f78cf9653fd1fc6786db49
                   <a name="TestInvalidLogin({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)">
                   </a> <!-- TestInvalidLogin({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....) -->
                   <span class="method-name">TestInvalidLogin</span>
+                  <span class="parameters">({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestvalidLogin({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)">
+                  </a> <!-- TestvalidLogin({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....) -->
+                  <span class="method-name">TestvalidLogin</span>
                   <span class="parameters">({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail.com})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -319,23 +293,23 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VipBillingTest')
 data.setCell(0, 2, 'com.htc.testPages.VipBillingTest')
-data.setCell(0, 3, 28077);
+data.setCell(0, 3, 23029);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testVipPage')
 data.setCell(1, 2, 'com.htc.testPages.VipTest')
-data.setCell(1, 3, 26274);
+data.setCell(1, 3, 21709);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TestHomePgae_Accessibility')
 data.setCell(2, 2, 'com.htc.testPages.HomeElementsTest')
-data.setCell(2, 3, 20008);
+data.setCell(2, 3, 17880);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TestInvalidLogin')
+data.setCell(3, 1, 'TestvalidLogin')
 data.setCell(3, 2, 'com.htc.testPages.LoginTest')
-data.setCell(3, 3, 5672);
+data.setCell(3, 3, 6979);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TestvalidLogin')
+data.setCell(4, 1, 'TestInvalidLogin')
 data.setCell(4, 2, 'com.htc.testPages.LoginTest')
-data.setCell(4, 3, 5562);
+data.setCell(4, 3, 2958);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -372,75 +346,71 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TestvalidLogin({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)</span>
-                <span class="method-start">13202 ms</span>
+                <span class="method-start">13384 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=TestvalidLogin status=FAILURE method=LoginTest.TestvalidLogin(java.util.Map)[pri:1,...)</span>
-                <span class="method-start">19372 ms</span>
+                <span class="method-name">tearDown([TestResult name=TestvalidLogin status=SUCCESS method=LoginTest.TestvalidLogin(java.util.Map)[pri:1,...)</span>
+                <span class="method-start">21102 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialization</span>
-                <span class="method-start">22352 ms</span>
+                <span class="method-start">24177 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TestInvalidLogin({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)</span>
-                <span class="method-start">30426 ms</span>
+                <span class="method-start">36198 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TestInvalidLogin status=SUCCESS method=LoginTest.TestInvalidLogin(java.util.Map)[pr...)</span>
-                <span class="method-start">36565 ms</span>
+                <span class="method-start">39597 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.htc.testPages.HomeElementsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialization</span>
-                <span class="method-start">38237 ms</span>
+                <span class="method-start">41514 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TestHomePgae_Accessibility({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)</span>
-                <span class="method-start">45316 ms</span>
+                <span class="method-start">48373 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TestHomePgae_Accessibility status=SUCCESS method=HomeElementsTest.TestHomePgae_Acce...)</span>
-                <span class="method-start">65793 ms</span>
+                <span class="method-start">66747 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.htc.testPages.VipTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialization</span>
-                <span class="method-start">68774 ms</span>
+                <span class="method-start">70255 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testVipPage({password=harsha12345, invpass=harshsaj122, userId=gowthamteja13@gmail.com, invid=gowthamte12@gmail....)</span>
-                <span class="method-start">75527 ms</span>
+                <span class="method-start">78371 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testVipPage status=FAILURE method=VipTest.testVipPage(java.util.Map)[pri:1, instanc...)</span>
-                <span class="method-start">102248 ms</span>
+                <span class="method-name">tearDown([TestResult name=testVipPage status=SUCCESS method=VipTest.testVipPage(java.util.Map)[pri:1, instanc...)</span>
+                <span class="method-start">100508 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.htc.testPages.VipBillingTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialization</span>
-                <span class="method-start">105411 ms</span>
+                <span class="method-start">103926 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">VipBillingTest({zipcode=XYZHHH, address=palamaner,Ap, city=Chennai, street=palamaner,Ap, cmpnt=Nike, telephone=8.29...)</span>
-                <span class="method-start">117935 ms</span>
+                <span class="method-start">114154 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=VipBillingTest status=FAILURE method=VipBillingTest.VipBillingTest(java.util.Map)[p...)</span>
-                <span class="method-start">146485 ms</span>
+                <span class="method-start">137669 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
