@@ -26,7 +26,9 @@ public class ExcelFileManager extends BaseTest {
 	private Sheet sheet;
 
 	public Object[][] getTestData(String sheetName) {
-
+		
+		
+		
 		String PAGE_LOAD_DATA = prop.getProperty("xmlPath");
 
 		FileInputStream file = null;
@@ -45,8 +47,8 @@ public class ExcelFileManager extends BaseTest {
 			e.printStackTrace();
 		}
 		sheet = book.getSheet(sheetName);
+		
 		Object[][] data = new Object[sheet.getLastRowNum()][1];
-
 		for (int Row = 0; Row < sheet.getLastRowNum(); Row++) {
 
 			Map<Object, Object> dataMap = new HashMap<Object, Object>();
