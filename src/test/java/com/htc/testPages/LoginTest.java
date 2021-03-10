@@ -16,7 +16,7 @@ public class LoginTest extends BaseTest {
 		
       
 		login.LOGIN_TO_HOME(mapData.get("userId").toString(), mapData.get("password").toString());
-		System.out.println("validLogin");
+		System.out.println("valid login ");
 	    Assert.assertEquals(driver.getTitle(),"My Account");
         
 	}
