@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class WaitCondition {
 	
 	
-	
 	public static void explicitWait(int tm, WebElement we, WebDriver driver) {
 
 		try {

@@ -33,7 +33,7 @@ public class DriverFactory {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Constants.TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Constants.IMPLICITTIMEOUT, TimeUnit.SECONDS);
-		driver.get(prop.getProperty("url"));
+		driver.get(Constants.APPLICATION_URL);
 
 		return driver;
 

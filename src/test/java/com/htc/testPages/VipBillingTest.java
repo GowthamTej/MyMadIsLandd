@@ -12,12 +12,12 @@ public class VipBillingTest extends BaseTest {
 	
 	@Test(priority = 1, dataProviderClass = com.htc.base.DataProvider.class,dataProvider="data")
 	private void vipBillingTest(Map<Object, Object> mapData) {
-		 homePage= loginPage.LOGIN_TO_HOME(mapData.get("userid").toString(), mapData.get("password").toString());
+		 homePage= loginPage.LOGIN_TO_HOME(prop.getProperty("email"),prop.getProperty("password"));
 		 homePage.clickOnVip();
 		 billingInfo= vipPage.Vip();
 		 billingInfo.billingInfo(mapData);
-		String hm = billingInfo.verifyBilling();
-		Assert.assertEquals(hm, "THANK YOU FOR YOUR PURCHASE!");
+		 String hm = billingInfo.verifyBilling();
+		 Assert.assertEquals(hm, "THANK YOU FOR YOUR PURCHASE!");
 	}
 
 }

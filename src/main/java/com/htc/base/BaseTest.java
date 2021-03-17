@@ -1,6 +1,5 @@
 package com.htc.base;
 
-
 import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -28,7 +27,6 @@ public class BaseTest {
 		
 		Property pro = new Property();
 		prop = pro.getProp();
-
 	}
 
 	@BeforeMethod
@@ -57,8 +55,8 @@ public class BaseTest {
 	} 
 	
 	@BeforeMethod
-	public  void objectCreation() {
-		
+	public  void objectCreation() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+	
 		 loginPage=new LoginPage(driver);
 		 homePage=new HomePage(driver);
 		 vipPage=new VipPage(driver);
