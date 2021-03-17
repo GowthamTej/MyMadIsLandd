@@ -5,7 +5,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.htc.constants.Constants;
-import com.htc.utility.SeleniumUtility;
+import com.htc.utility.ScreenShot;
 
 
 public class ExtentManager {
@@ -20,7 +20,7 @@ public class ExtentManager {
 	// Create an extent report instance
 	public static ExtentReports createInstance() {
 
-		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(Constants.EXTENTREPORT_PATH+"---"+SeleniumUtility.timeStamp()+".html");
+		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(Constants.EXTENTREPORT_PATH+"---"+ScreenShot.timeStamp()+".html");
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
 		htmlReporter.config().setChartVisibilityOnOpen(true);
 		htmlReporter.config().setTheme(Theme.DARK);

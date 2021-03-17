@@ -10,7 +10,7 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.htc.base.BaseTest;
-import com.htc.utility.SeleniumUtility;
+import com.htc.utility.ScreenShot;
 
 import extentreport.ExtentManager;
 import extentreport.ExtentTestManager;
@@ -20,9 +20,8 @@ public class TestListener implements ITestListener {
 	private int counter=0;
 	private int retryLimit=3;
 	public TestListener() {
-
+		
 		extentTestManager = new ExtentTestManager();
-
 	}
 
 	public void onStart(ITestContext context) {
@@ -52,7 +51,7 @@ public class TestListener implements ITestListener {
 		Object testClass = result.getInstance();
 		WebDriver webDriver = ((BaseTest) testClass).getDriver();
 
-		SeleniumUtility.ScreenShot(webDriver, result.getName(), "pass");
+		ScreenShot.screenShot(webDriver, result.getName(), "pass");
 
 	}
 
@@ -64,7 +63,7 @@ public class TestListener implements ITestListener {
 		Object testClass = result.getInstance();
 		WebDriver webDriver = ((BaseTest) testClass).getDriver();
 
-		String scr = SeleniumUtility.ScreenShot(webDriver, result.getName(), "fail");
+		String scr = ScreenShot.screenShot(webDriver, result.getName(), "fail");
 		try {
 			ExtentTestManager.test.fail(result.getThrowable().getMessage(),
 					MediaEntityBuilder.createScreenCaptureFromBase64String(scr).build());

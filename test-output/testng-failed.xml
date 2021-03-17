@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.htc.testPages.LoginTest">
+      <class name="com.htc.testPages.VipBillingTest">
         <methods>
-          <include name="TestvalidLogin"/>
-          <include name="TestInvalidLogin"/>
+          <include name="vipBillingTest" invocation-numbers="0"/>
           <include name="initialization"/>
           <include name="objectCreation"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.htc.testPages.LoginTest -->
+      </class> <!-- com.htc.testPages.VipBillingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

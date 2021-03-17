@@ -10,6 +10,6 @@ public class Constants {
 	public static final String PASS_SCREENSHOT="./ScreenShotsPass/";
 	public static final String FAIL_SCREENSHOT="./ScreenShotsFail/";
 	public static final String EXTENTREPORT_PATH="./externalReport/MadisonIsLand_HTML_Report";
-	
+	public static final String EXCEL_PATH="C:\\Users\\Gowtham Teja\\Desktop\\POM.xlsx";
 	
 }

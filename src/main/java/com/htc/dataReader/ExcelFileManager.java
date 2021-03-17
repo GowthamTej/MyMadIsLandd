@@ -11,6 +11,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 import com.htc.base.BaseTest;
+import com.htc.constants.Constants;
 
 import org.apache.poi.ss.usermodel.Sheet;
 
@@ -27,7 +28,7 @@ public class ExcelFileManager extends BaseTest {
 
 	public Object[][] getTestData(String sheetName) {
 		
-		String PAGE_LOAD_DATA = prop.getProperty("xmlPath");
+		String PAGE_LOAD_DATA = Constants.EXCEL_PATH;
 
 		FileInputStream file = null;
 		try {

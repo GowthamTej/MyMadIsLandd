@@ -24,7 +24,7 @@ public class DriverFactory {
 
 		switch (browserName) {
 		case "chrome":
-			System.setProperty(prop.getProperty("dri"), prop.getProperty("path"));
+			System.setProperty(prop.getProperty("chrome_key"), prop.getProperty("chrome_value"));
 			driver = new ChromeDriver();
 			break;
 		}

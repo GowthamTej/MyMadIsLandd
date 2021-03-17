@@ -13,10 +13,10 @@ import org.openqa.selenium.WebDriver;
 
 import com.htc.prop.Property;
 
-public class SeleniumUtility {
+public class ScreenShot {
 
 	
-	public static String ScreenShot(WebDriver driver, String fileName, String path) {
+	public static String screenShot(WebDriver driver, String fileName, String path) {
 
 		Property pro = new Property();
 		Properties prop = pro.getProp();
