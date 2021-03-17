@@ -25,6 +25,7 @@ public class LogOutPage {
 		this.account.click();
 		
 		this.logout.click();
+		System.out.println("//logout");
 		
 	}
 }
