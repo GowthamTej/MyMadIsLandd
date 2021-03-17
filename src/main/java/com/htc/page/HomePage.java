@@ -5,14 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.htc.base.Utility;
-
+import com.htc.utility.JSUtility;
 
 
 public class HomePage {
-	private WebDriver driver =null;
-	private Utility util = null;
 
+	private WebDriver driver = null;
+	private JSUtility util = null;
+	
 	@FindBy(xpath = "//a[text()='VIP']")
 	private WebElement vip;
 	@FindBy(xpath = "//a[text()='Sale']")
@@ -24,10 +24,9 @@ public class HomePage {
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
-
 		PageFactory.initElements(driver, this);
+		util = new JSUtility();
 
-		util = new Utility();
 	}
 
 	public VipPage clickOnVip() {
@@ -56,13 +55,13 @@ public class HomePage {
 		men.click();
 
 	}
-	
+
 	public void clickOnSideBar() {
 		clickOnVip();
 		clickOnSale();
 		clickOnWomen();
 		clickOnMen();
-		
+
 	}
 
 }

@@ -8,8 +8,9 @@
     <classes>
       <class name="com.htc.testPages.VipBillingTest">
         <methods>
+          <include name="vipBillingTest" invocation-numbers="0"/>
           <include name="initialization"/>
-          <include name="VipBillingTest" invocation-numbers="0"/>
+          <include name="objectCreation"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.htc.testPages.VipBillingTest -->

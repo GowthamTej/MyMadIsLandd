@@ -8,15 +8,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.htc.base.Utility;
-import com.htc.page.BillingInfo;
-
-
 
 public class VipPage {
 
 	private WebDriver driver = null;
-	private Utility util = null;
 
 	@FindBy(xpath = "//a[text()='VIP']")
 	private WebElement vipLink;
@@ -35,15 +30,14 @@ public class VipPage {
 
 	@FindBy(xpath = "//button[ @onclick='productAddToCartForm.submit(this)' ]//child::span[text()='Add to Cart']")
 	private WebElement clickOnCard;
-
+	
 	@FindBy(xpath = "//ul[@class='checkout-types top']/li/button")
 	private WebElement proceedToCheckOut;
 
-	
 	public VipPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		util = new Utility();
+
 	}
 
 	public BillingInfo Vip() {
@@ -56,7 +50,7 @@ public class VipPage {
 		clickOnProduct.click();
 
 		clickOnColour.click();
-		//clickOnSize.click();
+		// clickOnSize.click();
 		Actions act = new Actions(driver);
 		jse.executeScript("window.scrollBy(0,400)");
 
@@ -65,10 +59,11 @@ public class VipPage {
 
 		clickOnCard.click();
 		proceedToCheckOut.click();
+		
+
+		
 
 		return new BillingInfo(driver);
 	}
-	
-	
 
 }
