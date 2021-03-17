@@ -13,7 +13,7 @@ import com.htc.page.LoginPage;
 import com.htc.page.VipPage;
 import com.htc.prop.Property;
 
-public class BaseTest extends PageOpjects{
+public class BaseTest {
 
 	protected WebDriver driver = null;
 	protected Properties prop = null;
