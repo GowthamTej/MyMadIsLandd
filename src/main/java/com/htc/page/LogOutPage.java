@@ -23,7 +23,7 @@ public class LogOutPage {
 	public void ClickOnLogOut() {
 		this.account.click();
 		this.logout.click();
-		System.out.println("//logout");
+		System.out.println("logout***************");
 		
 	}
 }
