@@ -3,14 +3,14 @@ package com.htc.page;
 import java.util.Map;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
-public class BillingInfo  {
+public class BillingInfo {
 	private WebDriver driver;
 
 	@FindBy(xpath = "//div[@class='input-box']//select[@name='billing_address_id' and @id='billing-address-select']/option[2]")
@@ -79,42 +79,49 @@ public class BillingInfo  {
 	}
 
 	public void billingInfo(Map<Object, Object> mapData) {
-
-		addrs.click();
-
-		Actions act = new Actions(driver);
-		act.moveToElement(company).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x").keyUp(Keys.CONTROL)
-				.sendKeys(mapData.get("cmpnt").toString()).build().perform();
-
-		act.moveToElement(StreetAddress).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x").keyUp(Keys.CONTROL)
-				.sendKeys(mapData.get("address").toString()).build().perform();
-
-		act.moveToElement(StreetAddress2).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x").keyUp(Keys.CONTROL)
-				.sendKeys(mapData.get("street").toString()).build().perform();
-
-		act.moveToElement(city).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x").keyUp(Keys.CONTROL)
-				.sendKeys(mapData.get("city").toString()).build().perform();
-
-		act.moveToElement(postcode).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x").keyUp(Keys.CONTROL)
-				.sendKeys(mapData.get("zipcode").toString()).build().perform();
-		country3.click();
-
-		act.moveToElement(fax).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x").keyUp(Keys.CONTROL)
-				.sendKeys(mapData.get("fax").toString()).build().perform();
-		ShipAddress.click();
-		Continue.click();
-
-		radiobutton.click();
-		radiobutton2.click();
-		cnt.click();
-		cnt2.click();
-		PlaceOrder.click();
 		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+
+			addrs.click();
+
+			Actions act = new Actions(driver);
+			act.moveToElement(company).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x").keyUp(Keys.CONTROL)
+					.sendKeys(mapData.get("cmpnt").toString()).build().perform();
+
+			act.moveToElement(StreetAddress).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x")
+					.keyUp(Keys.CONTROL).sendKeys(mapData.get("address").toString()).build().perform();
+
+			act.moveToElement(StreetAddress2).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x")
+					.keyUp(Keys.CONTROL).sendKeys(mapData.get("street").toString()).build().perform();
+
+			act.moveToElement(city).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x").keyUp(Keys.CONTROL)
+					.sendKeys(mapData.get("city").toString()).build().perform();
+
+			act.moveToElement(postcode).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x").keyUp(Keys.CONTROL)
+					.sendKeys(mapData.get("zipcode").toString()).build().perform();
+			country3.click();
+
+			act.moveToElement(fax).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x").keyUp(Keys.CONTROL)
+					.sendKeys(mapData.get("fax").toString()).build().perform();
+			ShipAddress.click();
+			Continue.click();
+
+			radiobutton.click();
+			radiobutton2.click();
+			cnt.click();
+			cnt2.click();
+			PlaceOrder.click();
+
+		} catch (NoSuchElementException ee) {
+			ee.printStackTrace();
+			ee.getMessage();
+
+		} catch (Exception ee) {
+
+			ee.printStackTrace();
+			ee.getMessage();
+
 		}
+
 	}
 
 	public String verifyBilling() {

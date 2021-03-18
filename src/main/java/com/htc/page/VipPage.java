@@ -2,12 +2,12 @@ package com.htc.page;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 
 public class VipPage {
 
@@ -30,7 +30,7 @@ public class VipPage {
 
 	@FindBy(xpath = "//button[ @onclick='productAddToCartForm.submit(this)' ]//child::span[text()='Add to Cart']")
 	private WebElement clickOnCard;
-	
+
 	@FindBy(xpath = "//ul[@class='checkout-types top']/li/button")
 	private WebElement proceedToCheckOut;
 
@@ -41,29 +41,33 @@ public class VipPage {
 	}
 
 	public BillingInfo Vip() {
-		vipLink.click();
+		try {
 
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
+			vipLink.click();
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+			jse.executeScript("window.scrollBy(0,500)");
+			clickOnProduct.click();
+			clickOnColour.click();
+			// clickOnSize.click();
+			Actions act = new Actions(driver);
+			jse.executeScript("window.scrollBy(0,400)");
+			act.moveToElement(clickOnQty).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x").keyUp(Keys.CONTROL)
+					.sendKeys("1").perform();
+			clickOnCard.click();
+			proceedToCheckOut.click();
+		} catch (NoSuchElementException ee) {
+			ee.printStackTrace();
+			ee.getMessage();
 
-		jse.executeScript("window.scrollBy(0,500)");
+		} catch (Exception ee) {
 
-		clickOnProduct.click();
+			ee.printStackTrace();
+			ee.getMessage();
 
-		clickOnColour.click();
-		// clickOnSize.click();
-		Actions act = new Actions(driver);
-		jse.executeScript("window.scrollBy(0,400)");
-
-		act.moveToElement(clickOnQty).click().keyDown(Keys.CONTROL).sendKeys("a").sendKeys("x").keyUp(Keys.CONTROL)
-				.sendKeys("1").perform();
-
-		clickOnCard.click();
-		proceedToCheckOut.click();
-		
-
-		
+		}
 
 		return new BillingInfo(driver);
+
 	}
 
 }

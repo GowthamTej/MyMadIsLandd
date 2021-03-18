@@ -1,10 +1,10 @@
 package com.htc.page;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 
 public class LoginPage {
 	private WebDriver driver;
@@ -56,14 +56,26 @@ public class LoginPage {
 		this.login.click();
 	}
 
-	
-
 	public HomePage LOGIN_TO_HOME(String email, String password) {
-		account.click();
-		loginOption.click();
-		this.email.sendKeys(email);
-		this.password.sendKeys(password);
-		this.login.click();
+		try {
+
+			account.click();
+			loginOption.click();
+			this.email.sendKeys(email);
+			this.password.sendKeys(password);
+			this.login.click();
+
+		} catch (NoSuchElementException ee) {
+			ee.printStackTrace();
+			ee.getMessage();
+
+		} catch (Exception ee) {
+
+			ee.printStackTrace();
+			ee.getMessage();
+
+		}
+
 		return new HomePage(driver);
 	}
 

@@ -7,8 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitCondition {
-	
-	
+
 	public static void explicitWait(int tm, WebElement we, WebDriver driver) {
 
 		try {
@@ -28,16 +27,11 @@ public class WaitCondition {
 		}
 
 	}
-	
-	
-	
-	
+
 	public static void setExplicitWait(WebDriver wd, int tm, WebElement we, String value) throws InterruptedException {
 		@SuppressWarnings("unused")
 		WebElement wdw = new WebDriverWait(wd, tm).until(ExpectedConditions.visibilityOf(we));
 		we.sendKeys(value);
 	}
-	
-	
 
 }

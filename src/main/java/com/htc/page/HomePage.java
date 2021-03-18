@@ -1,12 +1,12 @@
 package com.htc.page;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.htc.utility.JSUtility;
-
 
 public class HomePage {
 
@@ -56,10 +56,21 @@ public class HomePage {
 	}
 
 	public void clickOnSideBar() {
-		clickOnVip();
-		clickOnSale();
-		clickOnWomen();
-		clickOnMen();
+		try {
+			clickOnVip();
+			clickOnSale();
+			clickOnWomen();
+			clickOnMen();
+		} catch (NoSuchElementException ee) {
+			ee.printStackTrace();
+			ee.getMessage();
+
+		} catch (Exception ee) {
+
+			ee.printStackTrace();
+			ee.getMessage();
+
+		}
 
 	}
 
