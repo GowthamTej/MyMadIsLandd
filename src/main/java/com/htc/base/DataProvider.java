@@ -19,7 +19,6 @@ public class DataProvider {
 		} else {
 			excelFile = new ExcelFileManager();
 			data = excelFile.getTestData("LoginData");
-
 		}
 		return data;
 	}
