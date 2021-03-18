@@ -55,7 +55,7 @@ public class BaseTest {
 	} 
 	
 	@BeforeMethod
-	public  void objectCreation() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+	public  void objectCreation() {
 	
 		 loginPage=new LoginPage(driver);
 		 homePage=new HomePage(driver);

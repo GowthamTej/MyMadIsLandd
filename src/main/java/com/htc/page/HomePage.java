@@ -12,7 +12,6 @@ public class HomePage {
 
 	private WebDriver driver = null;
 	private JSUtility util = null;
-	
 	@FindBy(xpath = "//a[text()='VIP']")
 	private WebElement vip;
 	@FindBy(xpath = "//a[text()='Sale']")

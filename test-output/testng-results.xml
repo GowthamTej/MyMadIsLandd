@@ -1,21 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-17T07:29:12 PDT" name="Default suite" finished-at="2021-03-17T07:30:09 PDT" duration-ms="57386">
+  <suite started-at="2021-03-17T12:12:43 PDT" name="Suite" finished-at="2021-03-17T12:14:54 PDT" duration-ms="131029">
     <groups>
     </groups>
-    <test started-at="2021-03-17T07:29:12 PDT" name="Default test" finished-at="2021-03-17T07:30:09 PDT" duration-ms="57386">
-      <class name="com.htc.testPages.VipBillingTest">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.htc.testPages.VipBillingTest@6973bf95]" started-at="2021-03-17T07:29:14 PDT" name="initialization" finished-at="2021-03-17T07:29:28 PDT" duration-ms="13637" status="PASS">
+    <test started-at="2021-03-17T12:12:43 PDT" name="Test" finished-at="2021-03-17T12:14:54 PDT" duration-ms="131029">
+      <class name="com.htc.testPages.HomeElementsTest">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.htc.testPages.HomeElementsTest@18ce0030]" started-at="2021-03-17T12:13:21 PDT" name="initialization" finished-at="2021-03-17T12:13:29 PDT" duration-ms="7331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="objectCreation()[pri:0, instance:com.htc.testPages.VipBillingTest@6973bf95]" started-at="2021-03-17T07:29:28 PDT" name="objectCreation" finished-at="2021-03-17T07:29:28 PDT" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="objectCreation()[pri:0, instance:com.htc.testPages.HomeElementsTest@18ce0030]" started-at="2021-03-17T12:13:29 PDT" name="objectCreation" finished-at="2021-03-17T12:13:29 PDT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- objectCreation -->
-        <test-method signature="vipBillingTest(java.util.Map)[pri:1, instance:com.htc.testPages.VipBillingTest@6973bf95]" started-at="2021-03-17T07:29:28 PDT" name="vipBillingTest" data-provider="data" finished-at="2021-03-17T07:30:03 PDT" duration-ms="34884" status="FAIL">
+        <test-method signature="TestHomePgae_Accessibility(java.util.Map)[pri:1, instance:com.htc.testPages.HomeElementsTest@18ce0030]" started-at="2021-03-17T12:13:29 PDT" name="TestHomePgae_Accessibility" data-provider="data" finished-at="2021-03-17T12:13:45 PDT" duration-ms="16536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{=, invalidPassword=harshateja112, password=harsha12345, userid=gowthamteja13@gmail.com, invalidUserid=gowthamteja12@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHomePgae_Accessibility -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.htc.testPages.HomeElementsTest@18ce0030]" started-at="2021-03-17T12:13:46 PDT" name="tearDown" finished-at="2021-03-17T12:13:48 PDT" duration-ms="2116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestHomePgae_Accessibility status=SUCCESS method=HomeElementsTest.TestHomePgae_Accessibility(java.util.Map)[pri:1, instance:com.htc.testPages.HomeElementsTest@18ce0030] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.htc.testPages.HomeElementsTest -->
+      <class name="com.htc.testPages.LoginTest">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.htc.testPages.LoginTest@56a6d5a6]" started-at="2021-03-17T12:12:45 PDT" name="initialization" finished-at="2021-03-17T12:12:53 PDT" duration-ms="8413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method is-config="true" signature="objectCreation()[pri:0, instance:com.htc.testPages.LoginTest@56a6d5a6]" started-at="2021-03-17T12:12:53 PDT" name="objectCreation" finished-at="2021-03-17T12:12:53 PDT" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectCreation -->
+        <test-method signature="TestvalidLogin(java.util.Map)[pri:1, instance:com.htc.testPages.LoginTest@56a6d5a6]" started-at="2021-03-17T12:12:53 PDT" name="TestvalidLogin" data-provider="data" finished-at="2021-03-17T12:13:00 PDT" duration-ms="6546" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{=, invalidPassword=harshateja112, password=harsha12345, userid=gowthamteja13@gmail.com, invalidUserid=gowthamteja12@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestvalidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.htc.testPages.LoginTest@56a6d5a6]" started-at="2021-03-17T12:13:00 PDT" name="tearDown" finished-at="2021-03-17T12:13:05 PDT" duration-ms="4316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestvalidLogin status=SUCCESS method=LoginTest.TestvalidLogin(java.util.Map)[pri:1, instance:com.htc.testPages.LoginTest@56a6d5a6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.htc.testPages.LoginTest@56a6d5a6]" started-at="2021-03-17T12:13:05 PDT" name="initialization" finished-at="2021-03-17T12:13:12 PDT" duration-ms="7171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method is-config="true" signature="objectCreation()[pri:0, instance:com.htc.testPages.LoginTest@56a6d5a6]" started-at="2021-03-17T12:13:12 PDT" name="objectCreation" finished-at="2021-03-17T12:13:12 PDT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectCreation -->
+        <test-method signature="TestInvalidLogin(java.util.Map)[pri:2, instance:com.htc.testPages.LoginTest@56a6d5a6]" started-at="2021-03-17T12:13:12 PDT" name="TestInvalidLogin" data-provider="data" finished-at="2021-03-17T12:13:19 PDT" duration-ms="6490" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{=, invalidPassword=harshateja112, password=harsha12345, userid=gowthamteja13@gmail.com, invalidUserid=gowthamteja12@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestInvalidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.htc.testPages.LoginTest@56a6d5a6]" started-at="2021-03-17T12:13:19 PDT" name="tearDown" finished-at="2021-03-17T12:13:21 PDT" duration-ms="1822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestInvalidLogin status=SUCCESS method=LoginTest.TestInvalidLogin(java.util.Map)[pri:2, instance:com.htc.testPages.LoginTest@56a6d5a6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.htc.testPages.LoginTest -->
+      <class name="com.htc.testPages.VipBillingTest">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.htc.testPages.VipBillingTest@45b9a632]" started-at="2021-03-17T12:14:18 PDT" name="initialization" finished-at="2021-03-17T12:14:26 PDT" duration-ms="7443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method is-config="true" signature="objectCreation()[pri:0, instance:com.htc.testPages.VipBillingTest@45b9a632]" started-at="2021-03-17T12:14:26 PDT" name="objectCreation" finished-at="2021-03-17T12:14:26 PDT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectCreation -->
+        <test-method signature="vipBillingTest(java.util.Map)[pri:1, instance:com.htc.testPages.VipBillingTest@45b9a632]" started-at="2021-03-17T12:14:26 PDT" name="vipBillingTest" data-provider="data" finished-at="2021-03-17T12:14:51 PDT" duration-ms="25251" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -25,52 +119,30 @@
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[@for='s_method_freeshipping_freeshipping']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='checkout-types top']/li/button"}
   (Session info: chrome=89.0.4389.82)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LENOVO', ip: '192.168.10.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61182}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: be7f1158716afef6657cadbd4101639d
-*** Element info: {Using=xpath, value=//label[@for='s_method_freeshipping_freeshipping']}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e67dcdda68821e8678cef990532ba25f
+*** Element info: {Using=xpath, value=//ul[@class='checkout-types top']/li/button}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[@for='s_method_freeshipping_freeshipping']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='checkout-types top']/li/button"}
   (Session info: chrome=89.0.4389.82)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LENOVO', ip: '192.168.10.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61182}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: be7f1158716afef6657cadbd4101639d
-*** Element info: {Using=xpath, value=//label[@for='s_method_freeshipping_freeshipping']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy13.click(Unknown Source)
-at com.htc.page.BillingInfo.billingInfo(BillingInfo.java:108)
-at com.htc.testPages.VipBillingTest.vipBillingTest(VipBillingTest.java:18)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\GOWTHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e67dcdda68821e8678cef990532ba25f
+*** Element info: {Using=xpath, value=//ul[@class='checkout-types top']/li/button}
+at listners.TestListener.onTestFailure(TestListener.java:75)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:66)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:651)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
@@ -99,11 +171,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vipBillingTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.htc.testPages.VipBillingTest@6973bf95]" started-at="2021-03-17T07:30:03 PDT" name="tearDown" finished-at="2021-03-17T07:30:09 PDT" duration-ms="6136" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.htc.testPages.VipBillingTest@45b9a632]" started-at="2021-03-17T12:14:51 PDT" name="tearDown" finished-at="2021-03-17T12:14:54 PDT" duration-ms="2474" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=vipBillingTest status=FAILURE method=VipBillingTest.vipBillingTest(java.util.Map)[pri:1, instance:com.htc.testPages.VipBillingTest@6973bf95] output={null}]]]>
+                <![CDATA[[TestResult name=vipBillingTest status=FAILURE method=VipBillingTest.vipBillingTest(java.util.Map)[pri:1, instance:com.htc.testPages.VipBillingTest@45b9a632] output={null}]]]>
               </value>
             </param>
           </params>
@@ -111,6 +183,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.htc.testPages.VipBillingTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.htc.testPages.VipTest">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.htc.testPages.VipTest@4445629]" started-at="2021-03-17T12:13:48 PDT" name="initialization" finished-at="2021-03-17T12:13:54 PDT" duration-ms="6425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method is-config="true" signature="objectCreation()[pri:0, instance:com.htc.testPages.VipTest@4445629]" started-at="2021-03-17T12:13:54 PDT" name="objectCreation" finished-at="2021-03-17T12:13:55 PDT" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectCreation -->
+        <test-method signature="testVipPage(java.util.Map)[pri:1, instance:com.htc.testPages.VipTest@4445629]" started-at="2021-03-17T12:13:55 PDT" name="testVipPage" data-provider="data" finished-at="2021-03-17T12:14:15 PDT" duration-ms="20599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{=, invalidPassword=harshateja112, password=harsha12345, userid=gowthamteja13@gmail.com, invalidUserid=gowthamteja12@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVipPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.htc.testPages.VipTest@4445629]" started-at="2021-03-17T12:14:16 PDT" name="tearDown" finished-at="2021-03-17T12:14:18 PDT" duration-ms="2435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testVipPage status=SUCCESS method=VipTest.testVipPage(java.util.Map)[pri:1, instance:com.htc.testPages.VipTest@4445629] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.htc.testPages.VipTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

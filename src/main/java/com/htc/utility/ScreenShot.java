@@ -22,6 +22,7 @@ public class ScreenShot {
 		Properties prop = pro.getProp();
         String scrPath=prop.getProperty(path) + fileName + "  " + timeStamp() +".jpg";
 		TakesScreenshot tss = (TakesScreenshot) driver;
+		
 		File fl = tss.getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(fl, new File(scrPath));
@@ -34,7 +35,7 @@ public class ScreenShot {
 
 	}
 	public static String timeStamp() {
-		return new SimpleDateFormat("E, dd MMMM-yyyy  hh mm ss").format(new Date());
+		return new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
 
 	}
 

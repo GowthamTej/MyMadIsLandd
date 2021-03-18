@@ -49,8 +49,6 @@ public class ExcelFileManager extends BaseTest {
 		
 		Object[][] data = new Object[sheet.getLastRowNum()][1];
 		
-		
-		
 		for (int Row = 0; Row < sheet.getLastRowNum(); Row++) {
 
 			Map<Object, Object> dataMap = new HashMap<Object, Object>();
@@ -59,7 +57,6 @@ public class ExcelFileManager extends BaseTest {
 
 				dataMap.put(sheet.getRow(0).getCell(col).toString(), sheet.getRow(Row + 1).getCell(col).toString());
 
-				// data[Row][col]=sheet.getRow(Row+1).getCell(col).toString();
 			}
 			data[Row][0] = dataMap;
 		}
