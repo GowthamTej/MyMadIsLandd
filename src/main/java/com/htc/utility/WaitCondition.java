@@ -1,14 +1,18 @@
 package com.htc.utility;
-
+import java.time.Duration;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.htc.constants.Constants;
 
 public class WaitCondition {
 
-	public static void explicitWait(int tm, WebElement we, WebDriver driver) {
+	public void explicitWait(int tm, WebElement we, WebDriver driver) {
 
 		try {
 			WebElement wdw = new WebDriverWait(driver, tm).until(ExpectedConditions.visibilityOf(we));
@@ -28,10 +32,18 @@ public class WaitCondition {
 
 	}
 
-	public static void setExplicitWait(WebDriver wd, int tm, WebElement we, String value) throws InterruptedException {
+	public void setExplicitWait(WebDriver wd, int tm, WebElement we, String value) throws InterruptedException {
+
 		@SuppressWarnings("unused")
 		WebElement wdw = new WebDriverWait(wd, tm).until(ExpectedConditions.visibilityOf(we));
 		we.sendKeys(value);
+
+	}
+
+	public void fluentWait(WebDriver reference) {
+
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(reference).withTimeout(Duration.ofSeconds(Constants.SECONDS))
+				.pollingEvery(Duration.ofSeconds(Constants.SECONDS)).ignoring(Exception.class);
 	}
 
 }
