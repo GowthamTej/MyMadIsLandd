@@ -13,7 +13,6 @@ public class VipTest extends BaseTest {
 		homePage = loginPage.LOGIN_TO_HOME(mapData.get("userid").toString(), mapData.get("password").toString());
 		homePage.clickOnVip();
 		vipPage.Vip();
-
 	}
 
 }

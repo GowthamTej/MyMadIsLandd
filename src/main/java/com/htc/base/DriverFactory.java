@@ -4,6 +4,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeSuite;
 
 import com.htc.constants.Constants;
 import com.htc.prop.Property;
@@ -16,7 +17,7 @@ public class DriverFactory {
 		prop = pro.getProp();
 	}
 
-	
+	@BeforeSuite
 	public WebDriver driver() {
 
 		WebDriver driver = null;

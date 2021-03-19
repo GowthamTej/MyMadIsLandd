@@ -16,6 +16,7 @@ import com.htc.constants.Constants;
 import org.apache.poi.ss.usermodel.Sheet;
 
 public class ExcelFileManager extends BaseTest {
+	private Object[][] data=null;
 
 	public ExcelFileManager() {
 		super();
@@ -47,7 +48,7 @@ public class ExcelFileManager extends BaseTest {
 		}
 		sheet = book.getSheet(sheetName);
 		
-		Object[][] data = new Object[sheet.getLastRowNum()][1];
+		 data = new Object[sheet.getLastRowNum()][1];
 		
 		for (int Row = 0; Row < sheet.getLastRowNum(); Row++) {
 
